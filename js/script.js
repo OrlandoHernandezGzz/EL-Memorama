@@ -12,7 +12,7 @@ class Memorama {
         this.card1 = null;
         this.card2 = null;
 
-        this.availableImages = [16, 7, 102, 103];
+        this.availableImages = [16, 7, 102, 103, 1, 2, 3, 4];
         this.orderForThisRound = [];
         this.cards = Array.from( document.querySelectorAll(".board-game figure") );
 
@@ -145,7 +145,7 @@ class Memorama {
 
         if (this.maxPairNumber == this.foundPairs) {
 
-            alert("¡ERES TODO UN GANADOR!");
+            alert("¡FELICIDADES TIENES MUY BUENA MEMORIA!");
             this.setNewGame();
             
         }
